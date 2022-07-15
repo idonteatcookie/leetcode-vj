@@ -1,4 +1,4 @@
-import{t as n}from"./index.d10dbfeb.js";const t=n(`<div class="problem"><div class="code-box"><h4 class="title">2336. \u65E0\u9650\u96C6\u4E2D\u7684\u6700\u5C0F\u6570\u5B57</h4><p>\u73B0\u6709\u4E00\u4E2A\u5305\u542B\u6240\u6709\u6B63\u6574\u6570\u7684\u96C6\u5408 <code>[1, 2, 3, 4, 5, ...]</code> \u3002</p>
+import{t as n}from"./index.cb0f8130.js";const t=n(`<div class="problem"><div class="code-box"><h4 class="title">2336. \u65E0\u9650\u96C6\u4E2D\u7684\u6700\u5C0F\u6570\u5B57</h4><p>\u73B0\u6709\u4E00\u4E2A\u5305\u542B\u6240\u6709\u6B63\u6574\u6570\u7684\u96C6\u5408 <code>[1, 2, 3, 4, 5, ...]</code> \u3002</p>
 
 <p>\u5B9E\u73B0 <code>SmallestInfiniteSet</code> \u7C7B\uFF1A</p>
 
