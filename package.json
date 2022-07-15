@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:github": "vite build --base=/leetcode-vj/",
     "serve": "vite preview",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx --fix ./src",
     "lint:style": "stylelint --fix \"src/**/*.{css,scss}\"",
-    "lint": "npm run lint:script && npm run lint:style"
+    "lint": "npm run lint:script && npm run lint:style",
+    "deploy": "sh ./deploy.sh"
   },
   "author": "idonteatcookie",
   "license": "MIT",
