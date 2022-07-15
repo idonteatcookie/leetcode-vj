@@ -1,5 +1,5 @@
-import { Component } from 'solid-js';
-import './index.scss';
+import { Component } from 'solid-js'
+import './index.scss'
 
 const Header: Component = () => {
   return (
@@ -11,8 +11,8 @@ const Header: Component = () => {
       </div>
       <div class="progress-bar-row">
         <div class="progress-bar">
-          <div class="done"></div>
-          <div class="current"></div>
+          <div class="done" />
+          <div class="current" />
         </div>
       </div>
 
@@ -22,7 +22,7 @@ const Header: Component = () => {
         <div>距离结束: 00:00:23</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

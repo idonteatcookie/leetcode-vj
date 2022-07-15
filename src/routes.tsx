@@ -1,18 +1,17 @@
-import { lazy } from 'solid-js';
-import type { RouteDefinition } from 'solid-app-router';
-import { Navigate } from 'solid-app-router';
+import { lazy } from 'solid-js'
+import type { RouteDefinition } from 'solid-app-router'
+import { Navigate } from 'solid-app-router'
 
-import Home from './pages/home';
-import AboutData from './pages/about.data';
+import Home from './pages/home'
 
 export const routes: RouteDefinition[] = [
   {
     path: '/',
-    component: Home,
+    component: Home
   },
   {
     path: '/contest-list',
-    component: lazy(() => import('./pages/contest-list')),
+    component: lazy(() => import('./pages/contest-list'))
   },
   {
     path: '/contest-detail',
@@ -20,28 +19,28 @@ export const routes: RouteDefinition[] = [
     children: [
       {
         path: '/',
-        component: () => <Navigate href="/contest-detail/overview" />,
+        component: () => <Navigate href="/contest-detail/overview" />
       },
       {
         path: '/overview',
-        component: lazy(() => import('./pages/contest-detail/overview')),
+        component: lazy(() => import('./pages/contest-detail/overview'))
       },
       {
         path: '/problem',
-        component: lazy(() => import('./pages/contest-detail/problem')),
+        component: lazy(() => import('./pages/contest-detail/problem'))
       },
       {
         path: '/status',
-        component: lazy(() => import('./pages/contest-detail/status')),
+        component: lazy(() => import('./pages/contest-detail/status'))
       },
       {
         path: '/rank',
-        component: lazy(() => import('./pages/contest-detail/rank')),
-      },
-    ],
+        component: lazy(() => import('./pages/contest-detail/rank'))
+      }
+    ]
   },
   {
     path: '**',
-    component: lazy(() => import('./pages/errors/404')),
-  },
-];
+    component: lazy(() => import('./pages/errors/404'))
+  }
+]

@@ -1,10 +1,10 @@
-import { Component, Index } from 'solid-js';
-import { Outlet, Link } from 'solid-app-router';
-import { Header } from './components';
+import { Component, Index } from 'solid-js'
+import { Outlet, Link } from 'solid-app-router'
+import { Header } from './components'
 
-import './index.scss';
+import './index.scss'
 
-const routes = ['overview', 'problem', 'status', 'rank'];
+const routes = ['overview', 'problem', 'status', 'rank']
 
 const ContestDetail: Component = () => {
   return (
@@ -24,7 +24,7 @@ const ContestDetail: Component = () => {
       </div>
       <Outlet />
     </div>
-  );
-};
+  )
+}
 
-export default ContestDetail;
+export default ContestDetail
