@@ -1,0 +1,59 @@
+.contest-detail-header {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #d7d7d7;
+    color: #333;
+  
+    .base-info-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      font-size: 18px;
+  
+      .title {
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+    .progress-bar-row {
+      padding: 20px;
+      .progress-bar {
+        height: 16px;
+        border-radius: 8px;
+        box-shadow: inset 1px 1px 8px 0px rgb(0 0 0 / 35%);
+        position: relative;
+        .done {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 16px;
+          background: #21b621;
+          width: 20%;
+          border-radius: 8px;
+        }
+        .current {
+          position: absolute;
+          top: -1px;
+          left: calc(20% - 16px);
+          background: #097abd;
+          height: 18px;
+          width: 18px;
+          border-radius: 50%;
+          box-shadow: 0px 0px 4px 0px;
+        }
+      }
+    }
+    .status-row {
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-size: 18px;
+        .status {
+            color: green;
+        }
+    }
+  }
+  
