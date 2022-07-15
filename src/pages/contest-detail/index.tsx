@@ -1,5 +1,5 @@
 import { Component, Index } from 'solid-js'
-import { Outlet, Link } from 'solid-app-router'
+import { Outlet, Link, useLocation } from 'solid-app-router'
 import { Header } from './components'
 
 import './index.scss'
@@ -7,14 +7,19 @@ import './index.scss'
 const routes = ['overview', 'problem', 'status', 'rank']
 
 const ContestDetail: Component = () => {
+  const localtion = useLocation()
+
   return (
     <div class="contest-detail">
       <Header />
-      <div class="flex justify-between p-16px ">
+      <div class="nav-box">
         <Index each={routes}>
           {(route) => (
             <Link
-              class="bg-green-500 flex-grow mx-10px px-10px py-4px text-center text-lg"
+              class="nav-link"
+              classList={{
+                active: localtion.pathname === `/contest-detail/${route()}`
+              }}
               href={`/contest-detail/${route()}`}
             >
               {route()}

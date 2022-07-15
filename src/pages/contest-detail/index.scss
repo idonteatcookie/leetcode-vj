@@ -1,4 +1,30 @@
 .contest-detail {
   padding: 20px;
   background: #fbfbfb;
+
+  .nav-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .nav-link {
+    flex: 1;
+    padding: 4px 10px;
+    color: #fff;
+    text-align: center;
+    background: #707070;
+
+    & + .nav-link {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background: #343434;
+    }
+
+    &.active {
+      background: orange;
+    }
+  }
 }

@@ -1,0 +1,31 @@
+.contest-detail-overview {
+  .title {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .problem-list {
+    width: 600px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px rgb(0 0 0 / 10%);
+
+    &:hover {
+      box-shadow: 0 0 3px 3px rgb(0 0 0 / 10%);
+    }
+  }
+
+  .problem-item {
+    padding: 10px 20px;
+    color: #00a5ff;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgb(224 224 224);
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

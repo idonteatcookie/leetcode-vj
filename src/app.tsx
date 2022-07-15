@@ -2,6 +2,7 @@ import type { Component } from 'solid-js'
 import { Link, useRoutes } from 'solid-app-router'
 import Avatar from './components/avatar'
 import { routes } from './routes'
+import './app.scss'
 
 const App: Component = () => {
   const Route = useRoutes(routes)
@@ -32,7 +33,7 @@ const App: Component = () => {
         </ul>
       </nav>
 
-      <main>
+      <main class="main-page">
         <Route />
       </main>
     </>
